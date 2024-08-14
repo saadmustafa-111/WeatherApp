@@ -1,12 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { WeathericonDisplay } from "./WeatherIcons";
 const Whetherdata = ({ weather }) => {
   if (!weather) {
     return null;
   }
 
   return (
-    <div className="p-5 flex flex-col gap-3">
+    <div className="p-5 flex flex-col md:items-center md:justify-center gap-3">
       <h2 className="bg-white shadow-xl p-3 text-xl font-semibold rounded-lg">
         Current Weather
       </h2>

@@ -5,7 +5,7 @@ import Whetherdata from "../components/Whetherdata";
 import Weatherforcast from "../components/Weatherforcast";
 export default function Home() {
   const [weatherData, setWeatherData] = useState(null);
-  const [forecastData, setForecastData] = useState(null);
+  const [forecastData, setForecastData] = useState([]);
 
   const handleSearch = async (city) => {
     try {

@@ -9,13 +9,13 @@ export default function Cityinfo({ onsearch }) {
     onsearch(city);
   };
   return (
-    <div className="p-4">
+    <div className=" p-4 flex md:items-center md:justify-center">
       <input
         type="text"
         placeholder="search a city"
         value={city}
         onChange={handlechange}
-        className="ml-2 p-2 border rounded-md"
+        className="ml-2  border rounded-md"
       />
       <button
         onClick={handleSearch}
